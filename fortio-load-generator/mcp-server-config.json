@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "fortio-load-generator": {
+      "type": "streamable-http",
+      "url": "http://localhost:3000/mcp"
+    }
+  }
+}

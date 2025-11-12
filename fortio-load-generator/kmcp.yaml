@@ -1,0 +1,22 @@
+name: fortio-load-generator
+framework: typescript
+version: 0.1.0
+description: MCP server for Fortio load generation on Kubernetes services
+registry: us-central1-docker.pkg.dev/field-engineering-us/online-boutique
+secrets:
+    local:
+        enabled: false
+        provider: env
+        file: .env.local
+    production:
+        enabled: false
+        provider: kubernetes
+        secretName: fortio-load-generator-secrets-production
+        namespace: default
+    staging:
+        enabled: false
+        provider: kubernetes
+        secretName: fortio-load-generator-secrets-staging
+        namespace: default
+created_at: 2025-11-12T04:46:21.047389-08:00
+updated_at: 2025-11-12T04:46:21.129024-08:00
