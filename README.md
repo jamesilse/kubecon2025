@@ -2,27 +2,28 @@
 [📚 Tutorial: Intelligent Failure: Using AI To Push Your Cluster To the Brink - James Ilse & Michael Levan, Solo.io](https://kccncna2025.sched.com/event/27FaF/tutorial-intelligent-failure-using-ai-to-push-your-cluster-to-the-brink-james-ilse-michael-levan-soloio)
 
 ## Contact us with questions!
-James Ilse:
+#### James Ilse:
  - james ilse on #CNCF slack and #ISTIO slack
  - linkedin: https://www.linkedin.com/in/james-ilse-887aaa5/  
  - email jamesilse@tutamail.com
-Michael Levan:
+   
+#### Michael Levan:
 - Michael Levan on #CNCF slack
 - linkedin: https://www.linkedin.com/in/michaellevan/
 
 
 # Resources
 #### Component Documentation Resources:
-Ambientmesh - https://Ambientmesh.io
-Kgateway - https://kgateway.dev
-Agentgateway - https://agentgateway.dev
-Kagent - https://kagent.dev
-ArgoCD - https://argoproj.github.io/cd/
+- Ambientmesh - https://Ambientmesh.io
+- Kgateway - https://kgateway.dev
+- Agentgateway - https://agentgateway.dev
+- Kagent - https://kagent.dev
+- ArgoCD - https://argoproj.github.io/cd/
 
 Gateway performance:
-https://github.com/howardjohn/gateway-api-bench/blob/v2/README-v2.md
+- https://github.com/howardjohn/gateway-api-bench/blob/v2/README-v2.md
 AI system security:
-https://media.defense.gov/2024/Apr/15/2003439257/-1/-1/0/CSI-DEPLOYING-AI-SYSTEMS-SECURELY.PDF
+- https://media.defense.gov/2024/Apr/15/2003439257/-1/-1/0/CSI-DEPLOYING-AI-SYSTEMS-SECURELY.PDF
 
 # HOW TO BUILD ALL THE THINGS WE TALKED ABOUT
 
@@ -183,7 +184,7 @@ Check the logs of istio to make sure it starts up
 kubectl logs -n istio-system -l app=ztunnel
 ```
 
-## Kgateway Installation
+## KAgent Installation
 
 You'll need to source an anthropic api key
 ```
@@ -472,13 +473,13 @@ Open the kagent dashboard, create a new agent
 ![[Pasted image 20251112064103.png]]
 
 ### Add prompts 
-(see prompts.md)
+(see prompts.txt)
 ### Generate Load 
-After creating the agent add 
+After creating the agent prompt it in kagent with whatever you want
 
 ## Securing LLM Connectivity
 
-### Installing agentgateway
+### Installing Kgateway and  agentgateway
 
 ```
 kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/releases/download/v1.4.0/standard-install.yaml
